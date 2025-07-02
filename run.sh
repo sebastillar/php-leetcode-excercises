@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-  echo "❌ Debes pasar el nombre del problema (ej: 0088-merge-sorted-array)"
+  echo "❌ Tenés que pasar el nombre del problema. Ejemplo:"
+  echo "./run.sh 0026-remove-duplicates"
   exit 1
 fi
 
-docker-compose run --rm app php src/$1/test.php
+docker-compose run --rm app php $1/test.php
