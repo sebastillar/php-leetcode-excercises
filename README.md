@@ -1,32 +1,78 @@
-# PHP Docker Starter
+# 🧠 LeetCode en PHP · Ejercicios de Algoritmia con PHP 🐘
 
-Este es un proyecto base para desarrollar en PHP con Docker Compose.
+¡Bienvenido/a! Este repositorio contiene soluciones **optimizadas** a problemas de [LeetCode](https://leetcode.com/) implementadas en **PHP**, junto con sus respectivas explicaciones, pruebas automatizadas y un entorno de desarrollo listo para ejecutar con **Docker Compose**.
 
-## 🚀 Cómo correrlo
+> 📚 Ideal para practicar algoritmia, repasar estructuras de datos o mejorar tus skills en entrevistas técnicas.
 
-```bash
-docker-compose up --build
-```
+---
 
-## Accedé en: http://localhost:8000
+## 🚀 ¿Qué incluye este repo?
 
-## 💡 Comandos para ejecutar tests
+- ✅ Soluciones eficientes en PHP para problemas clásicos
+- 🧪 Tests automatizados para cada problema
+- 📄 Documentación en español clara y concisa
+- 🐳 Entorno local listo con Docker Compose
+- 💡 Enfoque en buenas prácticas y código limpio
 
-Ejemplo para el test: 0088-merge-sorted-array/test.php
+---
 
-docker-compose run --rm app php /var/www/html/0088-merge-sorted-array/test.php
-
-Creating leetcode-excercises_app_run ... done
-✅ Example 1
-✅ Example 2
-✅ Example 3
-
-## 💡 Comandos para subir a GitHub
-
-### Inicializar el proyecto localmente:
+## 📦 Estructura del repositorio
 
 ```bash
-git init
-git add .
-git commit -m "Initial commit with PHP and Docker setup"
+src/
+├── 0026-remove-duplicates/
+│   ├── SolutionOptimized.php
+│   ├── test.php
+│   └── README.md
+├── 0080-remove-duplicates-at-most-twice/
+│   ├── SolutionOptimized.php
+│   ├── test.php
+│   └── README.md
+...
+run.sh
+docker-compose.yml
 ```
+
+## 📦 Cómo correr los ejercicios
+
+### Clonar el repo
+
+```bash
+git clone https://github.com/tuusuario/leetcode-php.git
+cd leetcode-php
+```
+
+### Levantar y correr un ejercicio
+
+```bash
+./run.sh 0080-remove-duplicates-at-most-twice
+```
+
+### Ver el resultado
+
+Los tests se ejecutan e imprimen el estado de cada ejemplo:
+
+✅ Ejemplo 1: longitud
+✅ Ejemplo 1: contenido
+
+## 🐳 Requisitos
+
+Docker y Docker Compose instalados
+
+Opcional: Visual Studio Code + extensión PHP Intelephense
+
+## 🧑‍💻 ¿Querés contribuir?
+
+Este proyecto está pensado como punto de partida colaborativo:
+
+💡 Proponé nuevos ejercicios
+
+🧪 Mejorá o agregá nuevos tests
+
+📚 Traducí o explicá soluciones
+
+Toda contribución es bienvenida. ¡Abrí un PR o una issue!
+
+## ⭐️ Ayudá con una estrella
+
+Si este repositorio te resulta útil, dejá una ⭐️. Me motiva a seguir compartiendo contenido abierto y de calidad.
